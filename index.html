@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Charset -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Погоны и звания ВС РФ</title>
+	<!-- Include meta tag to ensure proper rendering and touch zooming-->
+	<meta name="view-port" content="width=device-width, initial-scale=1">
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/themes/my-theme.css" />
+	<link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/my-style.css" />
+	<!-- Include the jQuery Mobile library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<!-- Open sidebar (left panel) on swipe -->
+	<script type="text/javascript" src="js/swipe-panel.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="js/admob.js"></script>
+	<!-- cordova js -->
+	<script src="cordova.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home" data-theme="a">
+
+	<div data-role="header">
+		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-transition="none" data-ajax="true" data-iconpos="right" class="ui-nodisc-icon transparentButton" style="margin-top: 2px;">Меню</a>
+		<h1>Погоны и звания</h1>
+	</div>
+
+	<!-- Выезжающая панель слева -->
+	<div data-role="panel" id="left-panel" data-display="overlay" data-position="left" data-position-fixed="true">
+
+		<ul data-role="listview">
+			<li data-icon="delete" class=""><a data-rel="close">Закрыть панель</a></li>
+			<li data-icon="false"><a href="content/main/about.html" data-transition="none" data-ajax="false">О приложении</a></li>
+			<li data-icon="false"><a href="content/main/contact.html" data-transition="none" data-ajax="false">Контактная информация</a></li>
+			<li data-icon="false"><a href="#PopupReviewApp" data-rel="popup" data-position-to="window" data-transition="none">Оставить отзыв</a></li>
+		</ul>	
+
+	</div>
+
+	<!-- Всплывающее окно: Оставить отзыв -->
+	<div data-role="popup" id="PopupReviewApp" data-overlay-theme="a" data-theme="a" data-dismissible="false">
+
+		<div data-role="header" data-theme="a">
+			<h1>Редирект</h1>
+		</div>
+
+		<div role="main" class="ui-content">
+			<h3 class="ui-title">Переход на Play Market</h3>
+			<p>Сейчас вы будете перенаправлены на страницу приложения в Play Market, где сможете оставить отзыв о приложении.</p>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" data-rel="back">Отмена</a>
+			<a href="https://play.google.com/store/apps/details?id=ru.rank" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-a" rel="external" data-transition="none">Перейти</a>
+		</div>
+
+	</div>
+
+	<!-- Контент -->
+	<div data-role="main" class="ui-content">
+
+		<ul data-role="listview" data-inset="false">
+
+			<!-- Сетка -->
+			<div class="ui-grid-a">
+
+				<!-- Левый столбец -->
+				<div class="ui-block-a">
+
+					<!-- Прокуратура -->
+					<a href="content/prokuratura/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/prokuratura_130.png"></center>
+						<center><p>Прокуратура</p></center>
+					</a>
+
+					<!-- Сухопутные войска -->
+					<a href="content/suhoputnye-voiska/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/suhoputnye_voiska_130.png"></center>
+						<center><p>Сухопутные войска</p></center>
+					</a>
+
+					<!-- Военно-морской флот -->
+					<a href="content/voenno-morsloy-flot/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/vmf_130.png"></center>
+						<center><p>Военно-морской флот</p></center>
+					</a>
+
+				</div>
+				<!-- Правый столбец -->
+				<div class="ui-block-b">
+
+					<!-- Полиция -->
+					<a href="content/police/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/police_130.png"></center>
+						<center><p>Полиция</p></center>
+					</a>
+
+					<!-- ВКС и ВДВ -->
+					<a href="content/vks-and-vdv/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/vks_and_vdv_130.png"></center>
+						<center><p>ВКС и ВДВ</p></center>
+					</a>
+
+					<!-- ФСБ
+					<a href="content/fsb/list.html" class="ui-btn" data-ajax="false">
+						<center><img src="images/emblems/fsb_130.png"></center>
+						<center><p>ФСБ</p></center>
+					</a> -->
+
+				</div>
+
+			</div>
+
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
